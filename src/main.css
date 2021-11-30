@@ -1,0 +1,81 @@
+body {
+  background-color: #f6f6f6;
+}
+
+.wrapper {
+  background-color: #fff;
+  -webkit-box-shadow: 0 10px 13px -7px #000, 5px 5px 15px 5px rgba(0,0,0,0); 
+  box-shadow: 0 10px 13px -7px #000, 5px 5px 15px 5px rgba(0,0,0,0);
+}
+
+.task,
+.input-div,
+.header-div {
+  border-bottom: 1px solid #a4a4a4;
+}
+
+.task {
+  height: 50px;
+}
+
+.input-div input::placeholder {
+  font-style: italic;
+}
+
+.btn-dots,
+.btn-add,
+.btn-refresh {
+  background-color: transparent;
+  border: none;
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 12px;
+  height: 24px;
+}
+
+.btn-refresh {
+  background-image: url(./images/refresh.svg);
+}
+
+.btn-dots {
+  background-image: url(./images/dots.svg);
+}
+
+.btn-add {
+  background-image: url(./images/return.svg);
+}
+
+.input-div input{
+  border: none;
+}
+
+.task .check-box {
+  width: 12px;
+  height: 24px;
+  border: 2px solid #333;
+}
+
+.check-box:checked + .content-task{
+  font-style: italic;
+  text-decoration: line-through;
+}
+
+
+.task .check-box:checked,
+.task .check-box:active
+{
+  outline: transparent;
+  background-color: transparent;
+  border-color: transparent;
+  color: #333;
+  box-shadow: none;
+  background-image: url(./images/check-2.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.task .check-box:focus {
+  box-shadow: none;
+  outline: none;
+}

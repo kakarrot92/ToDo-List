@@ -6,10 +6,28 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
 </head>
-<body>
-  <input type="text" class="todo-input" placeholder="Today's To Do">
-  <ul id="drag-list" class="drag-list">
-    
-  </ul>
-</body>
+  <body>
+    <div class="container-fluid test">
+      <div class="row justify-content-center align-items-center">
+        <div class="col-5 wrapper my-5">
+          <form class="add my-4">
+            <div class="row p-2 header-div">
+              <label class="col name p-2">Today's to do list</label>
+              <button type="button" class="me-2 btn-refresh col-2"></button>
+            </div>
+            <div class="row input-div p-2 justify-content-around">
+              <input class="col me-2 form-control" type="text" placeholder="Add to your list" name="add" />
+              <button type="button" class="me-2 btn-add col-2"></button>
+            </div>
+            <ul class="p-3 list-group gap-3 todos mx-auto text-light">
+            
+            </ul>
+            <div class="footer row text-center">
+              <a class="text-dark" href="#">Clear all completed tasks</a>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div> 
+  </body>
 </html>

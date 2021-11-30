@@ -1,17 +1,19 @@
-export default [
+const data = [
   {
     description: 'wash the car',
     completed: false,
     index: 1,
   },
   {
-    description: 'wash the car',
+    description: 'go to the store',
     completed: false,
     index: 2,
   },
   {
-    description: 'wash the car',
+    description: 'clean the house',
     completed: false,
     index: 3,
   },
 ];
+
+export default data;
