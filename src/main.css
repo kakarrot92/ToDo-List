@@ -4,8 +4,8 @@ body {
 
 .wrapper {
   background-color: #fff;
-  -webkit-box-shadow: 0 10px 13px -7px #000, 5px 5px 15px 5px rgba(0,0,0,0); 
-  box-shadow: 0 10px 13px -7px #000, 5px 5px 15px 5px rgba(0,0,0,0);
+  -webkit-box-shadow: 0 10px 13px -7px #000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+  box-shadow: 0 10px 13px -7px #000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
 }
 
 .task,
@@ -45,7 +45,7 @@ body {
   background-image: url(./images/return.svg);
 }
 
-.input-div input{
+.input-div input {
   border: none;
 }
 
@@ -55,15 +55,13 @@ body {
   border: 2px solid #333;
 }
 
-.check-box:checked + .content-task{
+.check-box:checked + .content-task {
   font-style: italic;
   text-decoration: line-through;
 }
 
-
 .task .check-box:checked,
-.task .check-box:active
-{
+.task .check-box:active {
   outline: transparent;
   background-color: transparent;
   border-color: transparent;
