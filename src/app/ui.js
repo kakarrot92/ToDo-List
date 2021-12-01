@@ -22,5 +22,22 @@ class UI {
       }
     });
   }
+
+  static getItem() {
+    let item;
+    if (localStorage.getItem(item) === null) {
+      item = [];
+    } else {
+      item = JSON.parse(localStorage.getItem('item'));
+    }
+    item.push();
+    localStorage.setItem('item', JSON.stringify(item));
+  }
+
+//   static storeItem(add) {
+//     const item = UI.getItem();
+//     item.push(add);
+//     localStorage.setItem('item', JSON.stringify(item));
+//   }
 }
 export default UI;
