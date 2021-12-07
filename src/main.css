@@ -22,6 +22,15 @@ body {
   font-style: italic;
 }
 
+.text {
+  all: unset;
+  color: #000;
+  font-size: 1rem;
+  padding: 10px;
+  margin-bottom: 35px;
+  display: none;
+}
+
 .btn-dots,
 .btn-add,
 .btn-refresh {

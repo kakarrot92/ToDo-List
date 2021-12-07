@@ -33,6 +33,10 @@ Open your command line
 - Git
 - Node
 
+### Usage 
+- Run `npm install`
+- Run `npm run build`
+- Open `dist/index.html`
 
 ### Prerequisites
 
