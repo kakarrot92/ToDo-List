@@ -7,7 +7,7 @@ In this project, you will build a simple HTML list of To Do tasks. The list will
 >Projects Screenshots
 
 ### 
-![screenshot](/src/images/screenshots/Todo.png)
+![screenshot](./src/images/screenshots/Todo.png)
 
 
 ## Built With
