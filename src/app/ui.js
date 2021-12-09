@@ -1,3 +1,4 @@
+// import { data } from 'jquery';
 import Store from './stored.js';
 
 const list = document.querySelector('.todos');
@@ -11,7 +12,7 @@ class UI {
     <li class="task form-check row d-flex">
       <input class="col-2 check-box form-check-input" id="${item.index}" type="checkbox" ${item.completed ? 'checked' : ''} />
       <input class="text" type="text"/>
-      <span class="col content-task text-dark">${item.description}</span>
+      <textarea class="col content-task text-dark" id="${item.index}">${item.description}</textarea>
       <button class="col-1 btn-dots" id="${item.index}"></button>
     </li>`;
       list.insertAdjacentHTML('beforeend', markup);
@@ -40,7 +41,7 @@ class UI {
       <li class="task form-check row d-flex">
         <input class="col-2 check-box form-check-input" id="${item.index}" type="checkbox" ${item.completed ? 'checked' : ''} />
         <input class="text" type="text"/>
-        <span class="col content-task text-dark">${item.description}</span>
+        <textarea class="col content-task text-dark">${item.description}</textarea>
         <button class="col-1 btn-dots" id="${item.index}"></button>
       </li>`;
       list.insertAdjacentHTML('beforeend', markup);
@@ -56,11 +57,20 @@ class UI {
   }
 
   static inputs() {
-    const spanText = document.querySelectorAll('.content-task').forEach((el) => {
-      el.addEventListener('click', () => {
-        spanText.style.display = 'none';
-      });
+    const data = Store.getItem();
+    list.addEventListener('change', (e) => {
+      if (e.target.tagName.toLowerCase() === 'textarea') {
+        const itemToChange = data.find((item) => item.index === e.target.id);
+        itemToChange.description = e.target.value;
+        localStorage.setItem('item', JSON.stringify(data));
+      }
     });
+  //   const textArea = document.querySelectorAll('.content-task').forEach(() => {
+  //     textArea.addEventListener('change', () => {
+  //       alert('hello');
+  //     });
+  //   });
+  // }
   }
 }
 UI.inputs();
