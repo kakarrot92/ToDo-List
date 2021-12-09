@@ -69,6 +69,16 @@ body {
   text-decoration: line-through;
 }
 
+textarea {
+  border: none;
+  height: 2rem;
+  margin-left: 0.5rem;
+}
+
+textarea:focus {
+  border: none;
+}
+
 .task .check-box:checked,
 .task .check-box:active {
   outline: transparent;
