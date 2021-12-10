@@ -1,11 +1,21 @@
-class Task {
-  constructor(description) {
-    this.description = description;
-    this.completed = false;
-    this.index = Math.floor((1 + Math.random()) * 0x10000)
-      .toString(16)
-      .substring(1);
+export function getItem() {
+  let item;
+  if (!localStorage.getItem('item')) {
+    item = [];
+  } else {
+    item = JSON.parse(localStorage.getItem('item'));
   }
+  return item;
 }
 
-export default Task;
+export function create(description) {
+  const data = getItem();
+  data.push(
+    {
+      description,
+      completed: false,
+      index: data.length + 1,
+    },
+  );
+  return data;
+}

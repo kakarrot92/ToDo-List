@@ -64,7 +64,7 @@ body {
   border: 2px solid #333;
 }
 
-.check-box:checked + .content-task {
+.strike {
   font-style: italic;
   text-decoration: line-through;
 }
