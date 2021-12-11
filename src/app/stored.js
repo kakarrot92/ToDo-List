@@ -1,18 +1,9 @@
-class Store {
-  static getItem() {
-    let item;
-    if (!localStorage.getItem('item')) {
-      item = [];
-    } else {
-      item = JSON.parse(localStorage.getItem('item'));
-    }
-    return item;
-  }
+import { create } from './task.js';
 
+class Store {
   static addItem(task) {
-    const list = Store.getItem();
-    list.push(task);
-    localStorage.setItem('item', JSON.stringify(list));
+    const data = create(task);
+    localStorage.setItem('item', JSON.stringify(data));
   }
 }
 export default Store;

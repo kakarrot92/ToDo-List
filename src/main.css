@@ -46,6 +46,17 @@ body {
   background-image: url(./images/refresh.svg);
 }
 
+.btn-trash {
+  background-image: url(./images/trash-outline.svg);
+  display: block;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.hide {
+  display: none;
+}
+
 .btn-dots {
   background-image: url(./images/dots.svg);
 }
@@ -64,7 +75,7 @@ body {
   border: 2px solid #333;
 }
 
-.check-box:checked + .content-task {
+.strike {
   font-style: italic;
   text-decoration: line-through;
 }
