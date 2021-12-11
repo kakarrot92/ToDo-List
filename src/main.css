@@ -46,11 +46,15 @@ body {
   background-image: url(./images/refresh.svg);
 }
 
-.btn-thrash {
+.btn-trash {
   background-image: url(./images/trash-outline.svg);
-  display: none;
+  display: block;
   background-position: center;
   background-repeat: no-repeat;
+}
+
+.hide {
+  display: none;
 }
 
 .btn-dots {
