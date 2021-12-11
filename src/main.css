@@ -46,6 +46,13 @@ body {
   background-image: url(./images/refresh.svg);
 }
 
+.btn-thrash {
+  background-image: url(./images/trash-outline.svg);
+  display: none;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
 .btn-dots {
   background-image: url(./images/dots.svg);
 }
