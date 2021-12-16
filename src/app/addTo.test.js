@@ -1,6 +1,8 @@
 import addTo from './addTo.js';
 // eslint-disable-next-line import/no-unresolved
 import deleteTodo from './deleteTodo.js';
+import update from './update.js';
+import checkBox from './checkBox.js';
 
 describe(' Should add item', () => {
   let arr = [];
@@ -15,5 +17,14 @@ describe(' Should add item', () => {
     const todo = arr[0];
     arr = deleteTodo(todo, arr);
     expect(arr).toHaveLength(0);
+  });
+  test(' update', () => {
+    arr.push({ completed: false, description: 'hello world', index: 1 });
+    update(1, arr, 'hey');
+    expect(arr[0].description).toBe('hey');
+  });
+  test('update completed status', () => {
+    checkBox(arr);
+    expect(arr[0].completed).toBe(true);
   });
 });
