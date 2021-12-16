@@ -1,4 +1,4 @@
-import localStorageMocks from "./__mocks__/localStorageMocks.js";
+import localStorageMocks from './__mocks__/localStorageMocks.js';
 
 export default (arr) => {
   arr = arr.filter((elem) => elem.completed !== true);

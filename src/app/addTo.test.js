@@ -31,5 +31,5 @@ describe(' Should add item', () => {
   test('should clear all completed', () => {
     arr = clearAllCompleted(arr);
     expect(arr).toHaveLength(0);
-  })
+  });
 });
