@@ -1,7 +1,7 @@
 import addTo from './addTo.js';
 // eslint-disable-next-line import/no-unresolved
 import deleteTodo from './deleteTodo.js';
-import update from './update.js';
+import update from './updateTask.js';
 import checkBox from './checkBoxItem.js';
 import clearAllCompleted from './clearAllCompletedTask.js';
 
