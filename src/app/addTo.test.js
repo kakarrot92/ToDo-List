@@ -3,6 +3,7 @@ import addTo from './addTo.js';
 import deleteTodo from './deleteTodo.js';
 import update from './update.js';
 import checkBox from './checkBox.js';
+import clearAllCompleted from './clearAllCompleted.js';
 
 describe(' Should add item', () => {
   let arr = [];
@@ -27,4 +28,8 @@ describe(' Should add item', () => {
     checkBox(arr);
     expect(arr[0].completed).toBe(true);
   });
+  test('should clear all completed', () => {
+    arr = clearAllCompleted(arr);
+    expect(arr).toHaveLength(0);
+  })
 });
