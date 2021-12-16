@@ -2,8 +2,8 @@ import addTo from './addTo.js';
 // eslint-disable-next-line import/no-unresolved
 import deleteTodo from './deleteTodo.js';
 import update from './update.js';
-import checkBox from './checkBox.js';
-import clearAllCompleted from './clearAllCompleted.js';
+import checkBox from './checkBoxItem.js';
+import clearAllCompleted from './clearAllCompletedTask.js';
 
 describe(' Should add item', () => {
   let arr = [];
